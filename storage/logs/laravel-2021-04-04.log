@@ -1,0 +1,206 @@
+[2021-04-04 17:39:27] production.ERROR: Class 'ActionM\UnitPay\UnitPayServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'ActionM\\UnitPay\\UnitPayServiceProvider' not found at /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider('ActionM\\\\UnitPay...')
+#1 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest(Array)
+#2 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(593): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(320): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 /var/www/tagahanga.ru/data/www/tagahanga.ru/artisan(36): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2021-04-04 17:40:34] production.ERROR: Class 'ActionM\UnitPay\UnitPayServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'ActionM\\UnitPay\\UnitPayServiceProvider' not found at /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider('ActionM\\\\UnitPay...')
+#1 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest(Array)
+#2 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(593): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(158): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#8 /var/www/tagahanga.ru/data/www/tagahanga.ru/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#9 {main}
+"} 
+[2021-04-04 17:40:35] production.ERROR: Class 'ActionM\UnitPay\UnitPayServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'ActionM\\UnitPay\\UnitPayServiceProvider' not found at /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider('ActionM\\\\UnitPay...')
+#1 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest(Array)
+#2 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(593): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(158): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#8 /var/www/tagahanga.ru/data/www/tagahanga.ru/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#9 {main}
+"} 
+[2021-04-04 17:40:38] production.ERROR: Class 'ActionM\UnitPay\UnitPayServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'ActionM\\UnitPay\\UnitPayServiceProvider' not found at /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider('ActionM\\\\UnitPay...')
+#1 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest(Array)
+#2 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(593): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(158): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#8 /var/www/tagahanga.ru/data/www/tagahanga.ru/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#9 {main}
+"} 
+[2021-04-04 17:42:17] production.ERROR: Class 'ActionM\UnitPay\UnitPayServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'ActionM\\UnitPay\\UnitPayServiceProvider' not found at /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider('ActionM\\\\UnitPay...')
+#1 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest(Array)
+#2 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(593): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(158): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#8 /var/www/tagahanga.ru/data/www/tagahanga.ru/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#9 {main}
+"} 
+[2021-04-04 17:44:23] production.ERROR: Class 'ActionM\UnitPay\UnitPayServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'ActionM\\UnitPay\\UnitPayServiceProvider' not found at /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider('ActionM\\\\UnitPay...')
+#1 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest(Array)
+#2 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(593): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(320): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 /var/www/tagahanga.ru/data/www/tagahanga.ru/artisan(36): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2021-04-04 17:48:28] production.ERROR: Class 'ActionM\UnitPay\UnitPayServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'ActionM\\UnitPay\\UnitPayServiceProvider' not found at /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider('ActionM\\\\UnitPay...')
+#1 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest(Array)
+#2 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(593): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(158): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#8 /var/www/tagahanga.ru/data/www/tagahanga.ru/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#9 {main}
+"} 
+[2021-04-04 17:56:15] production.ERROR: Class 'ActionM\UnitPay\UnitPayServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'ActionM\\UnitPay\\UnitPayServiceProvider' not found at /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider('ActionM\\\\UnitPay...')
+#1 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest(Array)
+#2 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(593): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(158): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#8 /var/www/tagahanga.ru/data/www/tagahanga.ru/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#9 {main}
+"} 
+[2021-04-04 18:00:26] production.ERROR: Class 'ActionM\UnitPay\UnitPayServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'ActionM\\UnitPay\\UnitPayServiceProvider' not found at /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider('ActionM\\\\UnitPay...')
+#1 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest(Array)
+#2 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(593): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(158): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#8 /var/www/tagahanga.ru/data/www/tagahanga.ru/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#9 {main}
+"} 
+[2021-04-04 18:14:17] production.ERROR: Class 'ActionM\UnitPay\UnitPayServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'ActionM\\UnitPay\\UnitPayServiceProvider' not found at /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider('ActionM\\\\UnitPay...')
+#1 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest(Array)
+#2 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(593): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(158): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#8 /var/www/tagahanga.ru/data/www/tagahanga.ru/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#9 {main}
+"} 
+[2021-04-04 18:18:40] production.ERROR: Class 'ActionM\UnitPay\UnitPayServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'ActionM\\UnitPay\\UnitPayServiceProvider' not found at /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider('ActionM\\\\UnitPay...')
+#1 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest(Array)
+#2 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(593): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(158): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#8 /var/www/tagahanga.ru/data/www/tagahanga.ru/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#9 {main}
+"} 
+[2021-04-04 18:18:42] production.ERROR: Class 'ActionM\UnitPay\UnitPayServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'ActionM\\UnitPay\\UnitPayServiceProvider' not found at /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider('ActionM\\\\UnitPay...')
+#1 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest(Array)
+#2 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(593): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(158): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#8 /var/www/tagahanga.ru/data/www/tagahanga.ru/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#9 {main}
+"} 
+[2021-04-04 18:27:33] production.ERROR: Class 'ActionM\UnitPay\UnitPayServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'ActionM\\UnitPay\\UnitPayServiceProvider' not found at /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider('ActionM\\\\UnitPay...')
+#1 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest(Array)
+#2 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(593): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(158): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#8 /var/www/tagahanga.ru/data/www/tagahanga.ru/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#9 {main}
+"} 
+[2021-04-04 18:27:35] production.ERROR: Class 'ActionM\UnitPay\UnitPayServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'ActionM\\UnitPay\\UnitPayServiceProvider' not found at /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider('ActionM\\\\UnitPay...')
+#1 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest(Array)
+#2 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(593): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(158): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#8 /var/www/tagahanga.ru/data/www/tagahanga.ru/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#9 {main}
+"} 
+[2021-04-04 18:27:38] production.ERROR: Class 'ActionM\UnitPay\UnitPayServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'ActionM\\UnitPay\\UnitPayServiceProvider' not found at /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider('ActionM\\\\UnitPay...')
+#1 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest(Array)
+#2 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(593): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(158): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#8 /var/www/tagahanga.ru/data/www/tagahanga.ru/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#9 {main}
+"} 
+[2021-04-04 18:28:16] production.ERROR: Class 'ActionM\UnitPay\UnitPayServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'ActionM\\UnitPay\\UnitPayServiceProvider' not found at /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider('ActionM\\\\UnitPay...')
+#1 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest(Array)
+#2 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(593): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#3 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#5 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(158): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#6 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#8 /var/www/tagahanga.ru/data/www/tagahanga.ru/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#9 {main}
+"} 

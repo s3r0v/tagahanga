@@ -1,0 +1,333 @@
+ä[2021-04-12 07:12:14] production.INFO: searchOrderFilter  
+[2021-04-12 07:12:14] production.INFO: 6073f2a313f39  
+[2021-04-12 07:12:47] production.INFO: searchOrderFilter  
+[2021-04-12 07:12:47] production.INFO: 6073f2a313f39  
+[2021-04-12 07:12:47] production.INFO: paidOrderFilter  
+[2021-04-12 07:12:47] production.INFO: {"id":12,"creator_id":23,"subscriber_id":22,"subscription_id":"6073f2a313f39","gateway":"UnitPay","subscription_date":"2021-04-12 07:11:31","subscription_expires":"2021-04-12 07:11:31","status":"Canceled","subscription_price":1,"creator_amount":0.8,"admin_amount":0.2}  
+[2021-04-12 07:15:02] production.INFO: searchOrderFilter  
+[2021-04-12 07:15:02] production.INFO: 6073f364514c8  
+[2021-04-12 07:15:24] production.INFO: searchOrderFilter  
+[2021-04-12 07:15:24] production.INFO: 6073f364514c8  
+[2021-04-12 07:15:24] production.INFO: paidOrderFilter  
+[2021-04-12 07:15:24] production.INFO: {"id":13,"creator_id":23,"subscriber_id":22,"subscription_id":"6073f364514c8","gateway":"UnitPay","subscription_date":"2021-04-12 07:14:44","subscription_expires":"2021-04-12 07:14:44","status":"Canceled","subscription_price":1,"creator_amount":0.8,"admin_amount":0.2}  
+[2021-04-12 07:19:47] production.INFO: searchOrderFilter  
+[2021-04-12 07:19:47] production.INFO: 6073f46ebb7d0  
+[2021-04-12 07:20:10] production.INFO: searchOrderFilter  
+[2021-04-12 07:20:10] production.INFO: 6073f46ebb7d0  
+[2021-04-12 07:20:10] production.INFO: paidOrderFilter  
+[2021-04-12 07:20:10] production.INFO: {"id":15,"creator_id":23,"subscriber_id":22,"subscription_id":"6073f46ebb7d0","gateway":"UnitPay","subscription_date":"2021-04-12 07:19:10","subscription_expires":"2021-04-12 07:19:10","status":"Canceled","subscription_price":1,"creator_amount":0.8,"admin_amount":0.2}  
+[2021-04-12 07:20:10] production.ERROR: Class 'App\Http\Controllers\NewSubscriberNotification' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'App\\Http\\Controllers\\NewSubscriberNotification' not found at /var/www/tagahanga.ru/data/www/tagahanga.ru/app/Http/Controllers/UnitpayController.php:89)
+[stacktrace]
+#0 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/daaner/laravel-unitpay/src/UnitPay.php(353): App\\Http\\Controllers\\UnitpayController::paidOrderFilter(Object(Illuminate\\Http\\Request), Object(App\\Subscription))
+#1 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/daaner/laravel-unitpay/src/UnitPay.php(414): Daaner\\UnitPay\\UnitPay->callFilterPaidOrder(Object(Illuminate\\Http\\Request), Object(App\\Subscription))
+#2 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(261): Daaner\\UnitPay\\UnitPay->payOrderFromGate(Object(Illuminate\\Http\\Request))
+#3 /var/www/tagahanga.ru/data/www/tagahanga.ru/app/Http/Controllers/UnitpayController.php(116): Illuminate\\Support\\Facades\\Facade::__callStatic('payOrderFromGat...', Array)
+#4 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\UnitpayController->payOrderFromGate(Object(Illuminate\\Http\\Request))
+#5 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('payOrderFromGat...', Array)
+#6 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\UnitpayController), 'payOrderFromGat...')
+#7 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Route.php(176): Illuminate\\Routing\\Route->runController()
+#8 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Router.php(686): Illuminate\\Routing\\Route->run()
+#9 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(130): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#10 /var/www/tagahanga.ru/data/www/tagahanga.ru/app/Http/Middleware/UserLastAuthMiddleware.php(59): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): App\\Http\\Middleware\\UserLastAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#12 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/uxweb/sweet-alert/src/SweetAlert/ConvertMessagesIntoSweetAlert.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#13 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): UxWeb\\SweetAlert\\ConvertMessagesIntoSweetAlert->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#14 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(77): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(56): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Router.php(688): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#28 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Router.php(663): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#29 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Router.php(629): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#30 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Router.php(618): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#31 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(172): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#32 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(130): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(63): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(147): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#45 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#46 /var/www/tagahanga.ru/data/www/tagahanga.ru/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#47 {main}
+"} 
+[2021-04-12 07:20:17] production.INFO: searchOrderFilter  
+[2021-04-12 07:20:17] production.INFO: 6073ebf45b1c8  
+[2021-04-12 07:20:19] production.INFO: searchOrderFilter  
+[2021-04-12 07:20:19] production.INFO: 6073ee0d71377  
+[2021-04-12 07:20:20] production.INFO: searchOrderFilter  
+[2021-04-12 07:20:20] production.INFO: 6073f02737d66  
+[2021-04-12 07:20:20] production.INFO: paidOrderFilter  
+[2021-04-12 07:20:20] production.INFO: {"id":9,"creator_id":23,"subscriber_id":25,"subscription_id":"6073f02737d66","gateway":"UnitPay","subscription_date":"2021-04-12 07:00:55","subscription_expires":"2021-04-12 07:00:55","status":"Canceled","subscription_price":1,"creator_amount":0.8,"admin_amount":0.2}  
+[2021-04-12 07:20:20] production.ERROR: Class 'App\Http\Controllers\NewSubscriberNotification' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'App\\Http\\Controllers\\NewSubscriberNotification' not found at /var/www/tagahanga.ru/data/www/tagahanga.ru/app/Http/Controllers/UnitpayController.php:89)
+[stacktrace]
+#0 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/daaner/laravel-unitpay/src/UnitPay.php(353): App\\Http\\Controllers\\UnitpayController::paidOrderFilter(Object(Illuminate\\Http\\Request), Object(App\\Subscription))
+#1 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/daaner/laravel-unitpay/src/UnitPay.php(414): Daaner\\UnitPay\\UnitPay->callFilterPaidOrder(Object(Illuminate\\Http\\Request), Object(App\\Subscription))
+#2 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(261): Daaner\\UnitPay\\UnitPay->payOrderFromGate(Object(Illuminate\\Http\\Request))
+#3 /var/www/tagahanga.ru/data/www/tagahanga.ru/app/Http/Controllers/UnitpayController.php(116): Illuminate\\Support\\Facades\\Facade::__callStatic('payOrderFromGat...', Array)
+#4 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\UnitpayController->payOrderFromGate(Object(Illuminate\\Http\\Request))
+#5 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('payOrderFromGat...', Array)
+#6 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\UnitpayController), 'payOrderFromGat...')
+#7 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Route.php(176): Illuminate\\Routing\\Route->runController()
+#8 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Router.php(686): Illuminate\\Routing\\Route->run()
+#9 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(130): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#10 /var/www/tagahanga.ru/data/www/tagahanga.ru/app/Http/Middleware/UserLastAuthMiddleware.php(59): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): App\\Http\\Middleware\\UserLastAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#12 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/uxweb/sweet-alert/src/SweetAlert/ConvertMessagesIntoSweetAlert.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#13 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): UxWeb\\SweetAlert\\ConvertMessagesIntoSweetAlert->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#14 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(77): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(56): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Router.php(688): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#28 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Router.php(663): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#29 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Router.php(629): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#30 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Router.php(618): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#31 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(172): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#32 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(130): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(63): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(147): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#45 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#46 /var/www/tagahanga.ru/data/www/tagahanga.ru/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#47 {main}
+"} 
+[2021-04-12 07:20:21] production.INFO: searchOrderFilter  
+[2021-04-12 07:20:21] production.INFO: 6073f16a90246  
+[2021-04-12 07:20:22] production.INFO: paidOrderFilter  
+[2021-04-12 07:20:22] production.INFO: {"id":10,"creator_id":23,"subscriber_id":22,"subscription_id":"6073f16a90246","gateway":"UnitPay","subscription_date":"2021-04-12 07:06:18","subscription_expires":"2021-04-12 07:06:18","status":"Canceled","subscription_price":1,"creator_amount":0.8,"admin_amount":0.2}  
+[2021-04-12 07:20:22] production.ERROR: Class 'App\Http\Controllers\NewSubscriberNotification' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'App\\Http\\Controllers\\NewSubscriberNotification' not found at /var/www/tagahanga.ru/data/www/tagahanga.ru/app/Http/Controllers/UnitpayController.php:89)
+[stacktrace]
+#0 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/daaner/laravel-unitpay/src/UnitPay.php(353): App\\Http\\Controllers\\UnitpayController::paidOrderFilter(Object(Illuminate\\Http\\Request), Object(App\\Subscription))
+#1 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/daaner/laravel-unitpay/src/UnitPay.php(414): Daaner\\UnitPay\\UnitPay->callFilterPaidOrder(Object(Illuminate\\Http\\Request), Object(App\\Subscription))
+#2 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(261): Daaner\\UnitPay\\UnitPay->payOrderFromGate(Object(Illuminate\\Http\\Request))
+#3 /var/www/tagahanga.ru/data/www/tagahanga.ru/app/Http/Controllers/UnitpayController.php(116): Illuminate\\Support\\Facades\\Facade::__callStatic('payOrderFromGat...', Array)
+#4 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\UnitpayController->payOrderFromGate(Object(Illuminate\\Http\\Request))
+#5 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('payOrderFromGat...', Array)
+#6 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\UnitpayController), 'payOrderFromGat...')
+#7 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Route.php(176): Illuminate\\Routing\\Route->runController()
+#8 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Router.php(686): Illuminate\\Routing\\Route->run()
+#9 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(130): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#10 /var/www/tagahanga.ru/data/www/tagahanga.ru/app/Http/Middleware/UserLastAuthMiddleware.php(59): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): App\\Http\\Middleware\\UserLastAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#12 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/uxweb/sweet-alert/src/SweetAlert/ConvertMessagesIntoSweetAlert.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#13 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): UxWeb\\SweetAlert\\ConvertMessagesIntoSweetAlert->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#14 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(77): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(56): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Router.php(688): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#28 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Router.php(663): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#29 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Router.php(629): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#30 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Router.php(618): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#31 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(172): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#32 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(130): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(63): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(147): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#45 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#46 /var/www/tagahanga.ru/data/www/tagahanga.ru/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#47 {main}
+"} 
+[2021-04-12 07:20:23] production.INFO: searchOrderFilter  
+[2021-04-12 07:20:23] production.INFO: 6073f207c8a48  
+[2021-04-12 07:20:23] production.INFO: paidOrderFilter  
+[2021-04-12 07:20:23] production.INFO: {"id":11,"creator_id":23,"subscriber_id":22,"subscription_id":"6073f207c8a48","gateway":"UnitPay","subscription_date":"2021-04-12 07:08:55","subscription_expires":"2021-04-12 07:08:55","status":"Canceled","subscription_price":1,"creator_amount":0.8,"admin_amount":0.2}  
+[2021-04-12 07:20:23] production.ERROR: Class 'App\Http\Controllers\NewSubscriberNotification' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'App\\Http\\Controllers\\NewSubscriberNotification' not found at /var/www/tagahanga.ru/data/www/tagahanga.ru/app/Http/Controllers/UnitpayController.php:89)
+[stacktrace]
+#0 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/daaner/laravel-unitpay/src/UnitPay.php(353): App\\Http\\Controllers\\UnitpayController::paidOrderFilter(Object(Illuminate\\Http\\Request), Object(App\\Subscription))
+#1 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/daaner/laravel-unitpay/src/UnitPay.php(414): Daaner\\UnitPay\\UnitPay->callFilterPaidOrder(Object(Illuminate\\Http\\Request), Object(App\\Subscription))
+#2 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(261): Daaner\\UnitPay\\UnitPay->payOrderFromGate(Object(Illuminate\\Http\\Request))
+#3 /var/www/tagahanga.ru/data/www/tagahanga.ru/app/Http/Controllers/UnitpayController.php(116): Illuminate\\Support\\Facades\\Facade::__callStatic('payOrderFromGat...', Array)
+#4 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\UnitpayController->payOrderFromGate(Object(Illuminate\\Http\\Request))
+#5 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('payOrderFromGat...', Array)
+#6 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\UnitpayController), 'payOrderFromGat...')
+#7 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Route.php(176): Illuminate\\Routing\\Route->runController()
+#8 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Router.php(686): Illuminate\\Routing\\Route->run()
+#9 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(130): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#10 /var/www/tagahanga.ru/data/www/tagahanga.ru/app/Http/Middleware/UserLastAuthMiddleware.php(59): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): App\\Http\\Middleware\\UserLastAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#12 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/uxweb/sweet-alert/src/SweetAlert/ConvertMessagesIntoSweetAlert.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#13 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): UxWeb\\SweetAlert\\ConvertMessagesIntoSweetAlert->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#14 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(77): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(56): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Router.php(688): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#28 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Router.php(663): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#29 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Router.php(629): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#30 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Router.php(618): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#31 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(172): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#32 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(130): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(63): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(147): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#45 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#46 /var/www/tagahanga.ru/data/www/tagahanga.ru/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#47 {main}
+"} 
+[2021-04-12 07:20:24] production.INFO: searchOrderFilter  
+[2021-04-12 07:20:24] production.INFO: 6073f2a313f39  
+[2021-04-12 07:20:24] production.INFO: paidOrderFilter  
+[2021-04-12 07:20:24] production.INFO: {"id":12,"creator_id":23,"subscriber_id":22,"subscription_id":"6073f2a313f39","gateway":"UnitPay","subscription_date":"2021-04-12 07:11:31","subscription_expires":"2021-04-12 07:11:31","status":"Canceled","subscription_price":1,"creator_amount":0.8,"admin_amount":0.2}  
+[2021-04-12 07:20:24] production.ERROR: Class 'App\Http\Controllers\NewSubscriberNotification' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'App\\Http\\Controllers\\NewSubscriberNotification' not found at /var/www/tagahanga.ru/data/www/tagahanga.ru/app/Http/Controllers/UnitpayController.php:89)
+[stacktrace]
+#0 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/daaner/laravel-unitpay/src/UnitPay.php(353): App\\Http\\Controllers\\UnitpayController::paidOrderFilter(Object(Illuminate\\Http\\Request), Object(App\\Subscription))
+#1 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/daaner/laravel-unitpay/src/UnitPay.php(414): Daaner\\UnitPay\\UnitPay->callFilterPaidOrder(Object(Illuminate\\Http\\Request), Object(App\\Subscription))
+#2 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(261): Daaner\\UnitPay\\UnitPay->payOrderFromGate(Object(Illuminate\\Http\\Request))
+#3 /var/www/tagahanga.ru/data/www/tagahanga.ru/app/Http/Controllers/UnitpayController.php(116): Illuminate\\Support\\Facades\\Facade::__callStatic('payOrderFromGat...', Array)
+#4 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\UnitpayController->payOrderFromGate(Object(Illuminate\\Http\\Request))
+#5 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('payOrderFromGat...', Array)
+#6 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\UnitpayController), 'payOrderFromGat...')
+#7 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Route.php(176): Illuminate\\Routing\\Route->runController()
+#8 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Router.php(686): Illuminate\\Routing\\Route->run()
+#9 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(130): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#10 /var/www/tagahanga.ru/data/www/tagahanga.ru/app/Http/Middleware/UserLastAuthMiddleware.php(59): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): App\\Http\\Middleware\\UserLastAuthMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#12 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/uxweb/sweet-alert/src/SweetAlert/ConvertMessagesIntoSweetAlert.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#13 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): UxWeb\\SweetAlert\\ConvertMessagesIntoSweetAlert->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#14 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(77): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(56): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Router.php(688): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#28 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Router.php(663): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#29 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Router.php(629): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#30 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Routing/Router.php(618): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#31 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(172): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#32 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(130): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#33 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(63): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(147): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#45 /var/www/tagahanga.ru/data/www/tagahanga.ru/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(112): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#46 /var/www/tagahanga.ru/data/www/tagahanga.ru/index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#47 {main}
+"} 
+[2021-04-12 07:20:26] production.INFO: searchOrderFilter  
+[2021-04-12 07:20:26] production.INFO: 6073f46ebb7d0  
+[2021-04-12 07:30:18] production.INFO: searchOrderFilter  
+[2021-04-12 07:30:18] production.INFO: 6073ebf45b1c8  
+[2021-04-12 07:30:20] production.INFO: searchOrderFilter  
+[2021-04-12 07:30:20] production.INFO: 6073ee0d71377  
+[2021-04-12 07:30:21] production.INFO: searchOrderFilter  
+[2021-04-12 07:30:21] production.INFO: 6073f02737d66  
+[2021-04-12 07:30:22] production.INFO: searchOrderFilter  
+[2021-04-12 07:30:22] production.INFO: 6073f16a90246  
+[2021-04-12 07:30:23] production.INFO: searchOrderFilter  
+[2021-04-12 07:30:23] production.INFO: 6073f207c8a48  
+[2021-04-12 07:30:24] production.INFO: searchOrderFilter  
+[2021-04-12 07:30:24] production.INFO: 6073f2a313f39  
+[2021-04-12 07:32:57] production.INFO: searchOrderFilter  
+[2021-04-12 07:32:57] production.INFO: 6073f7970e3c0  
+[2021-04-12 07:33:23] production.INFO: searchOrderFilter  
+[2021-04-12 07:33:23] production.INFO: 6073f7970e3c0  
+[2021-04-12 07:33:23] production.INFO: paidOrderFilter  
+[2021-04-12 07:33:23] production.INFO: {"id":16,"creator_id":23,"subscriber_id":22,"subscription_id":"6073f7970e3c0","gateway":"UnitPay","subscription_date":"2021-04-12 07:32:39","subscription_expires":"2021-04-12 07:32:39","status":"Canceled","subscription_price":1,"creator_amount":0.8,"admin_amount":0.2}  
+[2021-04-12 07:34:59] production.INFO: searchOrderFilter  
+[2021-04-12 07:34:59] production.INFO: 6073f809e483d  
+[2021-04-12 07:35:17] production.INFO: searchOrderFilter  
+[2021-04-12 07:35:17] production.INFO: 6073f809e483d  
+[2021-04-12 07:35:17] production.INFO: paidOrderFilter  
+[2021-04-12 07:35:17] production.INFO: {"id":17,"creator_id":23,"subscriber_id":29,"subscription_id":"6073f809e483d","gateway":"UnitPay","subscription_date":"2021-04-12 07:34:33","subscription_expires":"2021-04-12 07:34:33","status":"Canceled","subscription_price":1,"creator_amount":0.8,"admin_amount":0.2}  
+[2021-04-12 07:40:18] production.INFO: searchOrderFilter  
+[2021-04-12 07:40:18] production.INFO: 6073ee0d71377  
+[2021-04-12 07:52:23] production.INFO: searchOrderFilter  
+[2021-04-12 07:52:23] production.INFO: 6073fc262830b  
+[2021-04-12 07:52:47] production.INFO: searchOrderFilter  
+[2021-04-12 07:52:47] production.INFO: 6073fc262830b  
+[2021-04-12 07:52:47] production.INFO: paidOrderFilter  
+[2021-04-12 07:52:47] production.INFO: {"id":18,"creator_id":23,"subscriber_id":22,"subscription_id":"6073fc262830b","gateway":"UnitPay","subscription_date":"2021-04-12 07:52:06","subscription_expires":"2021-04-12 07:52:06","status":"Canceled","subscription_price":1,"creator_amount":0.8,"admin_amount":0.2}  
+[2021-04-12 07:57:36] production.INFO: searchOrderFilter  
+[2021-04-12 07:57:36] production.INFO: 6073fd617f998  
+[2021-04-12 07:58:05] production.INFO: searchOrderFilter  
+[2021-04-12 07:58:05] production.INFO: 6073fd617f998  
+[2021-04-12 07:58:05] production.INFO: paidOrderFilter  
+[2021-04-12 07:58:05] production.INFO: {"id":19,"creator_id":23,"subscriber_id":22,"subscription_id":"6073fd617f998","gateway":"UnitPay","subscription_date":"2021-04-12 07:57:21","subscription_expires":"2021-04-12 07:57:21","status":"Canceled","subscription_price":1,"creator_amount":0.8,"admin_amount":0.2}  
